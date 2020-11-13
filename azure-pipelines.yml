@@ -36,7 +36,7 @@ jobs:
         displayName: 'TESTS: frontend'
       - script: ./mvnw -ntp verify -Pprod -DskipTests
         displayName: 'TESTS: packaging'
-      - script: ./mvnw package -Pprod -DskipTests
+      - script: ./mvnw -ntp -DskipTests=true -B azure-webapp:deploy -Pprod
         displayName: 'BUILD: creating production build'
       - task: CopyFiles@2
         inputs:

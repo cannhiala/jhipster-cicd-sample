@@ -36,7 +36,11 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "blueprints": [],
-    "prettierJava": true
+    "prettierJava": true,
+    "azureAppServicePlan": "jhipsterweb-plan",
+    "azureApplicationInsightsName": "jhipsterweb-insight",
+    "azureAppServiceName": "jhipsterweb",
+    "azureAppServiceDeploymentType": "local"
   },
   "git-provider": "GitHub",
   "git-company": "cannhiala",
